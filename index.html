@@ -1,51 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 2 Tables and Forms</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <script src="assets/script.js"></script>
-</head>
-<body>
-    <div class="container">
-        <h1>Tables and Forms</h1>
-        <section>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="background">
+        <div class="container">
+          <h1>Tables and Forms</h1>
+          <section>
             <table class="table-align">
-                <tr class="header-row">
-                    <td>ID</td>
-                    <td>Name</td>
-                    <td>Dept</td>
-                    <td>Position</td>
-                    <td>Salary</td>
-                    <td>D.O.B</td>
-                </tr>
-                <tr class="other-row">
-                    <td>001</td>
-                    <td>Damon</td>
-                    <td>Engineer</td>
-                    <td>Assistance</td>
-                    <td>22000</td>
-                    <td>25/7/69</td>
-                </tr>
-                <tr class="other-row">
-                    <td>002</td>
-                    <td>Butcher</td>
-                    <td>Mechanic</td>
-                    <td>Head</td>
-                    <td>100000</td>
-                    <td>05/01/87</td>
-                </tr>
-                <tr class="other-row">
-                    <td>003</td>
-                    <td>Caroline</td>
-                    <td>Engineer</td>
-                    <td>Associate</td>
-                    <td>20000</td>
-                    <td>20/10/04</td>
-                </tr>
+              <tr class="header-row">
+                <td>ID</td>
+                <td>Name</td>
+                <td>Dept</td>
+                <td>Position</td>
+                <td>Salary</td>
+                <td>D.O.B</td>
+              </tr>
+              <tr class="other-row">
+                <td>001</td>
+                <td>Damon</td>
+                <td>Engineer</td>
+                <td>Assistance</td>
+                <td>22000</td>
+                <td>25/7/69</td>
+              </tr>
+              <tr class="other-row">
+                <td>002</td>
+                <td>Butcher</td>
+                <td>Mechanic</td>
+                <td>Head</td>
+                <td>100000</td>
+                <td>05/01/87</td>
+              </tr>
+              <tr class="other-row">
+                <td>003</td>
+                <td>Caroline</td>
+                <td>Engineer</td>
+                <td>Associate</td>
+                <td>20000</td>
+                <td>20/10/04</td>
+              </tr>
             </table>
-        </section>
+          </section>
+          <section>
+            <div class="form-flex">
+              <form action="/submit_url" id="form" method="post">
+                <div class="input-align">
+                  <label for="first-name">First name</label>
+                  <input type="text" name="first-name" placeholder="Enter your first name" required/>
+                  <label for="last-name">Last name</label>
+                  <input type="text" name="last-name" placeholder="Enter your last name" required/>
+                  <label for="email">Email</label>
+                  <input type="email" name="email" placeholder="exampleyourmail@gmail.com" required/>
+                  <label for="dept-name">Department name</label>
+                  <input type="text" name="dept-name" placeholder="Enter your department name" required/>
+                  <label for="suggestion-text">Any suggestions</label>
+                  <textarea name="suggestion-text" id="suggestion-text" rows="4" cols="38">To improve like...</textarea>
+                  <button type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+          </section>
+        </div>
     </div>
-</body>
+    <script src="assets/script.js"></script>
+  </body>
 </html>
